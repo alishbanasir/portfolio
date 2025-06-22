@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Alishba Nasir</title>
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo"><a href="/html/home.html"><img src="/assests/images/logo3.png" alt=""></a></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/html/home.html" class="active">Home</a></li>
+      <li><a href="/html/about.html">About</a></li>
+      <li><a href="/html/project.html">Projects</a></li>
+      <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="blob-bg"></div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Alishba Nasir</span></h1>
+        <p>I am a <strong>Frontend Developer</strong> with expertise in building modern, responsive, and user-focused
+          websites. I am passionate about turning simple ideas into polished digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="/html/project.html" class="btn primary">View Projects</a>
+          <a href="/html/contact.html" class="btn outline">Contact-Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="/assests/images/pro.jpeg" alt="Alishba Nasir" />
+          <div class="svg-icons">
+            <img src="/assests/images/python.webp" class="icon top-left" alt="python">
+            <img src="/assests/images/java.svg" class="icon top-right" alt="JavaScript">
+            <img src="/assests/images/html.png" class="icon bottom-left" alt="HTML">
+            <img src="/assests/images/nextjs.png" class="icon bottom-right" alt="nextjs">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Have a project in mind?</h2>
+    <p>Lets connect and build something amazing!</p>
+    <a href="/html/contact.html" class="btn primary">Contact Me</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="/html/home.html"><img src="/assests/images/logo3.png" alt="logo"></a>
+        <p>Frontend Developer | Passionate about crafting clean and responsive web interfaces.</p>
+      </div>
+
+      <div class="footer-middle">
+        <h4><b>Links</b></h4>
+        <br>
+        <ul>
+          <li><a href="/html/home.html">Home</a></li>
+          <li><a href="/html/about.html">About</a></li>
+          <li><a href="/html/project.html">Projects</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4><b>Contact</b></h4>
+        <br>
+        <p class="email"><img src="/assests/images/email.png" alt=""><a href="mailto:alishbanasir54@gmail.com">
+            alishbanasir54@gmail.com</a></p>
+        <div class="social-icons">
+          <a href="https://github.com/alishbanasir"><img src="/assests/images/git.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/alishba-nasirr/"><img src="/assests/images/linkdin.png"
+              alt="LinkedIn"></a>
+          <a href="https://www.facebook.com/alishba.nasir.167"><img src="/assests/images/fac.png" alt="Facebook"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Alishba Nasir. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+
+</body>
+
+</html>

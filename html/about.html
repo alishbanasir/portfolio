@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Alishba Nasir</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="/html/home.html"><img src="/assests/images/logo3.png" alt=""></a></div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/html/home.html" class="active">Home</a></li>
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/project.html">Projects</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="about-text">
+                <p>Hi! I’m <strong>Alishba Nasir</strong>, a creative and focused frontend developer passionate about
+                    crafting beautiful, responsive websites with clean UI and smooth UX.
+                    I work with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and I’ve
+                    explored modern frameworks like <strong>React</strong> and
+                    <strong>Next.js</strong>.
+                    I'm always eager to learn, take on real-world challenges, and continuously level up my skills.
+                    I approach each project with full dedication and aim to deliver clean, optimized code.
+                    My goal is to create digital experiences that are both engaging and user-friendly.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="/assests/images/profile.png" alt="Alishba Nasir">
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Tech Skills</h3>
+            <div class="skills-list">
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Python</span>
+                <span>Netlify</span>
+                <span>GitHub</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="/html/home.html"><img src="/assests/images/logo3.png" alt="logo"></a>
+                <p>Frontend Developer | Passionate about crafting clean and responsive web interfaces.</p>
+            </div>
+            <div class="footer-middle">
+                <h4><b>Links</b></h4>
+                <br>
+                <ul>
+                    <li><a href="/html/home.html">Home</a></li>
+                    <li><a href="/html/about.html">About</a></li>
+                    <li><a href="/html/project.html">Projects</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4><b>Contact</b></h4>
+                <br>
+                <p class="email"><img src="/assests/images/email.png" alt=""><a href="mailto:alishbanasir54@gmail.com">
+                        alishbanasir54@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://github.com/alishbanasir"><img src="/assests/images/git.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/alishba-nasirr/"><img src="/assests/images/linkdin.png"
+                            alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/alishba.nasir.167"><img src="/assests/images/fac.png"
+                            alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alishba Nasir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
