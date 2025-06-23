@@ -13,15 +13,33 @@
 <body>
 
     <header class="navbar">
-        <div class="logo"><a href="/home.html"><img src="/assests/images/logo3.png" alt=""></a></div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links" id="navLinks">
+        <div class="logo">
+          <a href="/home.html"><img src="/assests/images/logo3.png" alt="Logo" /></a>
+        </div>
+        <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      
+        <!-- Sidebar Start -->
+        <div class="sidebar" id="sidebar">
+          <div class="close-btn" onclick="toggleSidebar()">×</div>
+          <div class="sidebar-logo">
+            <img src="/assests/images/logo3.png" alt="Logo" />
+          </div>
+          <ul class="sidebar-links">
             <li><a href="/home.html" class="active">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/project.html">Projects</a></li>
             <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      
+        <!-- Desktop Nav (only show on large screens) -->
+        <ul class="nav-links">
+          <li><a href="/home.html" class="active">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/project.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
-    </header>
+      </header>
 
     <div class="container">
         <div class="about-wrapper">
@@ -92,11 +110,11 @@
     </footer>
 
     <script>
-        function toggleMenu() {
-            const nav = document.getElementById("navLinks");
-            nav.classList.toggle("show");
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          sidebar.classList.toggle("show");
         }
-    </script>
+      </script>
 
 </body>
 
