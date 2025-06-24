@@ -11,30 +11,15 @@
 </head>
 
 <body>
-<!-- 
-  <header class="navbar">
-    <div class="logo"><a href="/home.html"><img src="/assests/images/logo3.png" alt=""></a></div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="/home.html" class="active">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/project.html">Projects</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </header> -->
-
-
   <header class="navbar">
     <div class="logo">
       <a href="/home.html"><img src="/assests/images/logo3.png" alt="Logo" /></a>
     </div>
     <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
-  
-    <!-- Sidebar Start -->
     <div class="sidebar" id="sidebar">
       <div class="close-btn" onclick="toggleSidebar()">×</div>
       <div class="sidebar-logo">
-        <img src="/assests/images/logo3.png" alt="Logo" />
+        <a href="/home.html"><img src="/assests/images/logo3.png" alt="Logo" /></a>
       </div>
       <ul class="sidebar-links">
         <li><a href="/home.html" class="active">Home</a></li>
@@ -43,8 +28,6 @@
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </div>
-  
-    <!-- Desktop Nav (only show on large screens) -->
     <ul class="nav-links">
       <li><a href="/home.html" class="active">Home</a></li>
       <li><a href="/about.html">About</a></li>
@@ -53,37 +36,96 @@
     </ul>
   </header>
 
-  <section class="hero">
-    <div class="blob-bg"></div>
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1>Hi, I'm <span>Alishba Nasir</span></h1>
-        <p>I am a <strong>Frontend Developer</strong> with expertise in building modern, responsive, and user-focused
-          websites. I am passionate about turning simple ideas into polished digital experiences.</p>
-        <div class="hero-buttons">
-          <a href="/project.html" class="btn primary">View Projects</a>
-          <a href="/contact.html" class="btn outline">Contact-Me</a>
+  <div class="home">
+    <section class="hero">
+      <div class="blob-bg"></div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Alishba Nasir</span></h1>
+          <p>I am a <strong>Frontend Developer</strong> with expertise in building modern, responsive, and user-focused
+            websites. I am passionate about turning simple ideas into polished digital experiences.</p>
+          <div class="hero-buttons">
+            <a href="/project.html" class="btn primary">View Projects</a>
+            <a href="/contact.html" class="btn outline">Contact-Me</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <div class="image-wrapper">
-          <img src="/assests/images/pro.jpeg" alt="Alishba Nasir" />
-          <div class="svg-icons">
-            <img src="/assests/images/python.webp" class="icon top-left" alt="python">
-            <img src="/assests/images/java.svg" class="icon top-right" alt="JavaScript">
-            <img src="/assests/images/html.png" class="icon bottom-left" alt="HTML">
-            <img src="/assests/images/nextjs.png" class="icon bottom-right" alt="nextjs">
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="/assests/images/pro.jpeg" alt="Alishba Nasir" />
+            <div class="svg-icons">
+              <img src="/assests/images/python.webp" class="icon top-left" alt="python">
+              <img src="/assests/images/java.svg" class="icon top-right" alt="JavaScript">
+              <img src="/assests/images/html.png" class="icon bottom-left" alt="HTML">
+              <img src="/assests/images/nextjs.png" class="icon bottom-right" alt="nextjs">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <div class="hori"></div>
 
-  <section class="cta-section">
-    <h2>Have a project in mind?</h2>
-    <p>Lets connect and build something amazing!</p>
-    <a href="/contact.html" class="btn primary">Contact Me</a>
-  </section>
+    <section class="projects">
+      <div class="container">
+        <div class="services-header">
+          <h6 class="section-heading"><b>Crafted with Code & Creativity</b></h6>
+          <a href="/project.html" class="view-all-services-btn">
+            View All Projects
+            <span class="arrow-icon">&#x2192;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-category-top">
+              <h3>Task Organizer</h3>
+            </div>
+            <div class="project-content-bottom">
+              <img src="/assests/images/task.png" alt="Task Organizer">
+              <p>An intuitive and responsive task management app to help users organize daily activities with ease. It
+                features a clean UI, smooth interaction, and seamless task tracking to boost productivity.</p>
+              <a href="https://smit-hackathon-task-management-system.vercel.app/" target="_blank"
+                class="project-btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-category-top">
+              <h3>Furniture Website</h3>
+            </div>
+            <div class="project-content-bottom">
+              <img src="/assests/images/furniture.png" alt="Furniture Website">
+              <p>A modern and elegant furniture site built to display beautiful home decor items. Its smooth navigation
+                and clean layout provide users with a pleasant and inspiring Browse experience.</p>
+              <a href="https://furniture-web-eight.vercel.app/" target="_blank" class="project-btn">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-category-top">
+              <h3>Blog Website</h3>
+            </div>
+            <div class="project-content-bottom">
+              <img src="/assests/images/blog1.png" alt="Blog Website">
+              <p>A sleek and responsive blog platform for sharing ideas, stories, and thoughts. Built with a minimalist
+                layout and smooth UI, it ensures a distraction-free reading experience on all devices.</p>
+              <a href="https://blog-website-jet-six.vercel.app/" target="_blank" class="project-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+    <section class="cta-section">
+      <h2>Have a project in mind?</h2>
+      <p>Lets connect and build something amazing!</p>
+      <a href="/contact.html" class="btn primary">Contact Me</a>
+    </section>
+  </div>
+
 
   <footer class="footer">
     <div class="footer-container">
@@ -125,29 +167,6 @@
       sidebar.classList.toggle("show");
     }
   </script>
-
-
-<!-- <script>
-  function toggleMenu() {
-    const nav = document.getElementById("navLinks");
-    nav.classList.toggle("show");
-  }
-</script>
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
