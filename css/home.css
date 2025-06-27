@@ -670,16 +670,18 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
 }
-.contact-form .btn {
+.contact-form .btn-message {
   background-color: #5fa9a8;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: medium;
+  text-align: center;
+  align-items: center;
   padding: 15px 15px;
   cursor: pointer;
 }
-.contact-form .btn:hover {
+.contact-form .btn-message:hover {
   border: 2px solid #5fa9a8;
   border-radius: 5px;
   color: #5fa9a8;
