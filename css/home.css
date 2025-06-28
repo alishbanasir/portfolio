@@ -670,7 +670,7 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
 }
-.contact-form .btn-messages {
+.contact-form .btn {
   background-color: #5fa9a8;
   color: white;
   border: none;
@@ -681,13 +681,13 @@ h2 {
   padding: 15px 15px;
   cursor: pointer;
 }
-.contact-form .btn-messages:hover {
+.contact-form .btn:hover {
   border: 2px solid #5fa9a8;
   border-radius: 5px;
   color: #5fa9a8;
   font-weight: 600;
-  background-color: #fff;
-  /* text-decoration: underline #5fa9a8; */
+  background-color: transparent;
+  text-decoration: underline #5fa9a8;
 }
 .contact-info {
   text-align: center;
