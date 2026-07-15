@@ -10,6 +10,42 @@
   <link rel="stylesheet" href="/css/home.css" />
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    /* Floating WhatsApp Button Layout Override */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      z-index: 9999;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #20ba5a;
+    }
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+      }
+      .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -25,37 +61,35 @@
         <a href="/"><img src="/assests/images/logo3.png" alt="Logo" /></a>
       </div>
       <ul class="sidebar-links">
-        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/project.html">Projects</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
       </ul>
     </div>
     <ul class="nav-links">
-      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/project.html">Projects</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
     </ul>
   </header>
   <br>
   <br>
-  <section class="contact">
-    <div class="container">
+  
+  <section class="contact" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 40px 20px; overflow-x: hidden;">
+    <div class="container" style="width: 100%; padding: 0;">
       <h2>Contact Me</h2>
-      <form id="contactForm" class="contact-form">
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
-        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
+      <form id="contactForm" class="contact-form" style="width: 100%; max-width: 600px; margin: 0 auto;">
+        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; box-sizing: border-box;" />
+        <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 100%; box-sizing: border-box;" />
+        <textarea id="message" name="message" rows="6" placeholder="Your Message" required style="width: 100%; box-sizing: border-box;"></textarea>
+        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
       </form>
-      <div class="contact-info">
+      <div class="contact-info" style="text-align: center; margin-top: 30px;">
         <p><b>Email:</b><a href="mailto:alishbanasir54@gmail.com"> alishbanasir54@gmail.com</a></p>
-        <p><b>GitHub:</b><a href="https://github.com/alishbanasir"> https://github.com/alishbanasir</a></p>
-        <p><b>LinkedIn:</b><a href="https://www.linkedin.com/in/alishba-nasirr/">
-            https://www.linkedin.com/in/alishba-nasirr/</a></p>
-
+        <p><b>GitHub:</b><a href="https://github.com/alishbanasir" target="_blank"> https://github.com/alishbanasir</a></p>
+        <p><b>LinkedIn:</b><a href="https://www.linkedin.com/in/alishba-nasirr/" target="_blank"> https://www.linkedin.com/in/alishba-nasirr/</a></p>
       </div>
     </div>
   </section>
@@ -79,20 +113,31 @@
       <div class="footer-right">
         <h4><b>Contact</b></h4>
         <br>
-        <p class="email"><img src="/assests/images/email.png" alt=""><a href="mailto:alishbanasir54@gmail.com">
-            alishbanasir54@gmail.com</a></p>
+        <p class="email"><img src="/assests/images/email.png" alt=""><a href="mailto:alishbanasir54@gmail.com">alishbanasir54@gmail.com</a></p>
         <div class="social-icons">
           <a href="https://github.com/alishbanasir"><img src="/assests/images/git.png" alt="GitHub"></a>
-          <a href="https://www.linkedin.com/in/alishba-nasirr/"><img src="/assests/images/linkdin.png"
-              alt="LinkedIn"></a>
+          <a href="https://www.linkedin.com/in/alishba-nasirr/"><img src="/assests/images/linkdin.png" alt="LinkedIn"></a>
           <a href="https://www.facebook.com/alishba.nasir.167"><img src="/assests/images/fac.png" alt="Facebook"></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Alishba Nasir. All rights reserved.</p>
+      <p>&copy; 2026 Alishba Nasir. All rights reserved.</p>
     </div>
   </footer>
+
+<a href="https://wa.me/923368219479?text=Hi%20Alishba,%20I%20saw%20your%20developer%20portfolio%20and%20I%20would%20like%20to%20get%20a%20website%20created%20by%20you.%20Let's%20discuss%20the%20project%20details!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#ffffff">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-93.6-25.7l-6.7-4-69.6 18.3 18.7-67.9-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 81.8-184.5 181.8-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-185 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("dmKaSSv_V2FDwhxQX");
+    })();
+  </script>
 
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
@@ -109,6 +154,7 @@
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
+    
     window.addEventListener("DOMContentLoaded", () => {
       const form = document.getElementById("contactForm");
       form.addEventListener("submit", async (e) => {
@@ -139,22 +185,50 @@
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("dmKaSSv_V2FDwhxQX");
-    })();
-  </script>
-
-
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.classList.toggle("show");
     }
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Jin layers par animation chahiye, unpar class wrap karein
+      const targetSelectors = '.hero-text, .hero-image, .universal-card, .project-card, .skills, .about-text, .about-img, .contact-form';
+      
+      const elements = document.querySelectorAll(targetSelectors);
+      elements.forEach(el => el.classList.add('reveal-element'));
 
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.15 // Element jab 15% screen par dikhega, animation trigger hogi
+      };
 
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entries[0].intersectionRatio <= 0) return; // Drop redundant tracking frames
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target); // Aik baar animate hone ke baad memory clean rakein
+          }
+        });
+      }, observerOptions);
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,      // Element screen par aane ke kitne pixel baad animate ho
+      delay: 100,       // Animation shuru hone ka delay (ms me)
+      duration: 800,     // Animation kitni der tak chale (ms me) - 800ms se premium look aata hai
+      easing: 'ease-in-out', // Smooth transition logic
+      once: true,       // Kya animation sirf ek baar chalni chahiye jab user pehli baar scroll kare
+      mirror: false     // Scroll up karte waqt dobara animate na ho
+    });
+  </script>
 </body>
 
 </html>
