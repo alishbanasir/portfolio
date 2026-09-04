@@ -45,6 +45,139 @@
         height: 26px;
       }
     }
+    /* Contact Page — Split Layout */
+    .contact-split {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 560px;
+      max-width: 1100px;
+      margin: 40px auto;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    }
+    .contact-panel {
+      flex: 1 1 380px;
+      background: #569897;
+      color: #fff;
+      padding: 60px 45px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-panel h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0 0 18px;
+      color: #fff;
+      text-align: left;
+    }
+    .contact-panel p.lead {
+      color: rgba(255,255,255,0.7);
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 320px;
+      margin: 0 0 40px;
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .contact-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.98rem;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: padding-left 0.2s ease, color 0.2s ease;
+    }
+    .contact-links a:last-child { border-bottom: 1px solid rgba(255,255,255,0.15); }
+    .contact-links a:hover {
+      padding-left: 8px;
+      color:#acd5d4;
+    }
+    .contact-links a span.label {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.78rem;
+    }
+    .contact-form-panel {
+      flex: 1 1 380px;
+      background: #fff;
+      padding: 60px 45px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .field {
+      margin-bottom: 30px;
+    }
+    .field label {
+      display: block;
+      font-size: 0.78rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    .field input,
+    .field textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #e2e2e2;
+      padding: 8px 2px;
+      font-size: 1.05rem;
+      font-family: inherit;
+      color: #1a1a1a;
+      background: transparent;
+      transition: border-color 0.2s ease;
+      resize: none;
+    }
+    .field input:focus,
+    .field textarea:focus {
+      outline: none;
+      border-bottom-color: #5fa9a8;
+    }    .send-btn {
+      align-self: flex-start;
+      background: #5fa9a8;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 14px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 6px 16px rgba(95, 169, 168, 0.35);
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .send-btn svg {
+      transition: transform 0.2s ease;
+    }
+    .send-btn:hover {
+      background: #488483;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(95, 169, 168, 0.45);
+    }
+    .send-btn:hover svg {
+      transform: translateX(4px);
+    }
+    .send-btn:active {
+      transform: translateY(0);
+    }
+    #formStatus { font-size: 0.9rem; margin-top: 16px; min-height: 20px; }
+    @media (max-width: 700px) {
+      .contact-panel, .contact-form-panel { padding: 40px 28px; }
+      .contact-panel h2 { font-size: 1.9rem; }
+    }
   </style>
 </head>
 
@@ -79,20 +212,49 @@
   <br>
   <br>
   
-  <section class="contact" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 40px 20px; overflow-x: hidden;">
-    <div class="container" style="width: 100%; padding: 0;">
-      <h2>Contact Me</h2>
-      <form id="contactForm" class="contact-form" style="width: 100%; max-width: 600px; margin: 0 auto;">
-        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; box-sizing: border-box;" />
-        <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 100%; box-sizing: border-box;" />
-        <textarea id="message" name="message" rows="6" placeholder="Your Message" required style="width: 100%; box-sizing: border-box;"></textarea>
-        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-      </form>
-      <div class="contact-info" style="text-align: center; margin-top: 30px;">
-        <p><b>Email:</b><a href="mailto:alishbanasir54@gmail.com"> alishbanasir54@gmail.com</a></p>
-        <p><b>GitHub:</b><a href="https://github.com/alishbanasir" target="_blank"> https://github.com/alishbanasir</a></p>
-        <p><b>LinkedIn:</b><a href="https://www.linkedin.com/in/alishba-nasirr/" target="_blank"> https://www.linkedin.com/in/alishba-nasirr/</a></p>
+<section class="contact-split">
+    <div class="contact-panel">
+      <h2>Let's start a conversation.</h2>
+      <p class="lead">Whether it's a project, a role, or just a question send a message and I'll get back within a day.</p>
+      <div class="contact-links">
+        <a href="mailto:alishbanasir54@gmail.com">
+          alishbanasir54@gmail.com <span class="label">Email</span>
+        </a>
+        <a href="https://wa.me/923368219479?text=Hi%20Alishba%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you." target="_blank" rel="noopener noreferrer">
+          +92 336 8219479 <span class="label">WhatsApp</span>
+        </a>
+        <a href="https://github.com/alishbanasir" target="_blank">
+          alishbanasir <span class="label">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/alishba-nasirr/" target="_blank">
+          alishba-nasirr <span class="label">LinkedIn</span>
+        </a>
       </div>
+    </div>
+
+    <div class="contact-form-panel">
+      <form id="contactForm">
+        <div class="field">
+          <label for="name"><strong><b>Your Name</b></strong></label>
+          <input type="text" id="name" name="name" placeholder="Alishba Nasir" required />
+        </div>
+        <div class="field">
+          <label for="email"><strong><b>Your Email</b></strong></label>
+          <input type="email" id="email" name="email" placeholder="alishbanasir54@gmail.com" required />
+        </div>
+        <div class="field">
+          <label for="message"><strong><b>Your Message</b></strong></label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="send-btn">
+          <span>Send Message</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+                <p id="formStatus"></p>
+      </form>
     </div>
   </section>
 
@@ -156,14 +318,22 @@
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-    
-    window.addEventListener("DOMContentLoaded", () => {
+       window.addEventListener("DOMContentLoaded", () => {
       const form = document.getElementById("contactForm");
+      const statusEl = document.getElementById("formStatus");
+
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
+
+        const waText = encodeURIComponent(`Hi Alishba, my name is ${name} (${email}).\n\n${message}`);
+        window.open(`https://wa.me/923368219479?text=${waText}`, "_blank");
+
+        statusEl.style.color = "#666";
+        statusEl.textContent = "Opening WhatsApp & saving your message...";
+
         try {
           await addDoc(collection(db, "messages"), {
             name,
@@ -177,11 +347,13 @@
             message: message
           });
 
-          alert("Message sent successfully!");
+          statusEl.style.color = "#2e7d32";
+          statusEl.textContent = "Message sent successfully!";
           form.reset();
         } catch (error) {
           console.error("Error:", error);
-          alert("Message failed to send.");
+          statusEl.style.color = "#c0392b";
+          statusEl.textContent = "Saved, but email failed — your WhatsApp message was still sent.";
         }
       });
     });
